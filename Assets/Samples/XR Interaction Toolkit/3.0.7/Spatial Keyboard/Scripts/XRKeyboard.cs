@@ -393,14 +393,19 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
                     break;
                 case KeyCode.Return:
                 case KeyCode.KeypadEnter:
-                    if (submitOnEnter)
-                    {
-                        Submit();
-                    }
-                    else
-                    {
-                        UpdateText("\n");
-                    }
+
+                    Close();
+
+                    //TAUFIQ 2025-11-23: Changed keypad enter function to close keypad
+
+                    //if (submitOnEnter)
+                    //{
+                    //    //Submit();
+                    //}
+                    //else
+                    //{
+                    //    //UpdateText("\n");
+                    //}
 
                     break;
                 default:
